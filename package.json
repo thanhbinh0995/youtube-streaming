@@ -22,9 +22,11 @@
     "cors": "^2.8.4",
     "cosmicjs": "^2.39.0",
     "dotenv": "^5.0.1",
+    "ejs": "^2.6.1",
     "express": "^4.15.4",
     "express-validator": "^5.2.0",
     "fb-bot-framework": "^0.3.0",
+    "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^6.0.1",
     "googleapis": "^31.0.2",
     "morgan": "^1.8.2",
@@ -33,11 +35,13 @@
     "path": "^0.12.7",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
+    "pusher": "^2.0.0",
+    "pusher-js": "^4.2.2",
     "request": "^2.81.0",
     "sequelize": "^4.37.7",
     "swagger-jsdoc": "^1.9.7"
   },
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "nodemon ./bin/www"
   }
 }
