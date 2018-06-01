@@ -114,5 +114,4 @@ yarn-error.log
 
 *.key
 
-/server/config/*.json
 .idea
