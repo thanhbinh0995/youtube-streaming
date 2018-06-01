@@ -50,8 +50,6 @@ fluentFfmpeg(file)
         console.log('Processing finished !');
     });
 
-
-const router = Express.Router();
 app
     .use(Cors())
     .use(BodyParser.json())

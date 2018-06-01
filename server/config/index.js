@@ -16,15 +16,17 @@ oauth2Client.setCredentials({
     access_token: accessToken,
     refresh_token: refreshToken
 });
+const startTime = moment().add(10, 'm');
+const endTime = moment().add(30, 'm');
 
 const broadcastParams = {
     "auth": oauth2Client,
     "part": "snippet,status,contentDetails",
     "resource": {
         "snippet": {
-            "title": "Testing NodeJS 123",
-            "scheduledStartTime": "2018-06-01T11:12:58.000Z",
-            "scheduledEndTime": "2018-06-01T11:40:58.000Z",
+            "title": "Testing NodeJS",
+            "scheduledStartTime": startTime,
+            "scheduledEndTime": endTime,
         },
         "status": {
             "privacyStatus": "private",
