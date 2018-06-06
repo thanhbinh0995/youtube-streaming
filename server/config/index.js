@@ -20,21 +20,21 @@ const startTime = moment().add(10, 'm');
 const endTime = moment().add(30, 'm');
 
 const broadcastParams = {
-    "auth": oauth2Client,
-    "part": "snippet,status,contentDetails",
-    "resource": {
-        "snippet": {
-            "title": "Testing NodeJS",
-            "scheduledStartTime": startTime,
-            "scheduledEndTime": endTime,
+    auth: oauth2Client,
+    part: "snippet,status,contentDetails",
+    resource: {
+        snippet: {
+            title: "Testing NodeJS",
+            scheduledStartTime: startTime,
+            scheduledEndTime: endTime,
         },
-        "status": {
-            "privacyStatus": "private",
+        status: {
+            privacyStatus: "private",
         },
-        "contentDetails": {
-            "monitorStream": {
-                "enableMonitorStream": true,
-                "enableDvr": true
+        contentDetails: {
+            monitorStream: {
+                enableMonitorStream: true,
+                enableDvr: true
             }
         }
     }
@@ -42,15 +42,15 @@ const broadcastParams = {
 
 
 const streamParams = {
-    "auth": oauth2Client,
-    "part": "snippet,cdn",
-    "resource": {
-        "snippet": {
-            "title": "ly 240p"
+    auth: oauth2Client,
+    part: "snippet,cdn",
+    resource: {
+        snippet: {
+            title: "ly 240p"
         },
-        "cdn": {
-            "format": "240p",
-            "ingestionType": "rtmp",
+        cdn: {
+            format: "240p",
+            ingestionType: "rtmp",
         }
     }
 };
@@ -65,4 +65,5 @@ module.exports = {
     refreshToken: process.env.REFRESH_TOKEN,
     broadcastParams: broadcastParams,
     streamParams: streamParams,
+    oauth2Client: oauth2Client
 };
